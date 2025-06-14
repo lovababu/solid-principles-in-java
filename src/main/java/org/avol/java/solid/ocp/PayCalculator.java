@@ -28,8 +28,7 @@ class FullTimeEmployee {
  * This class contains attributes and methods specific to part-time employees,
  * including their hourly pay and pay calculation logic.
  */
-class PartTimeEmployee
-{
+class PartTimeEmployee {
     float hourlyPay; // The hourly pay rate for the part-time employee.
 
     /**
@@ -67,8 +66,8 @@ public class PayCalculator {
     public float calculatePay(Object o) {
         if (o instanceof FullTimeEmployee ft) {
             return ft.calculate();
-        } else if (o instanceof PartTime pt) {
-            return pt.calculate();
+        } else if (o instanceof PartTimeEmployee pe) {
+            return pe.calculate();
         } else {
             throw new IllegalArgumentException("Invalid Instance.");
         }

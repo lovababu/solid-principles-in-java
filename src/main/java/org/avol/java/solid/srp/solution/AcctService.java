@@ -1,3 +1,5 @@
+package org.avol.java.solid.srp.solution;
+
 /**
  * Service interface for account-related operations.
  * Follows the Single Responsibility Principle (SRP).
